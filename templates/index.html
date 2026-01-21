@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bakchod MusicApp 🎵</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="app-container">
+  <header>
+    <h1> MusicApp</h1>
+    <p class="tagline">Download • Play • Chill</p>
+  </header>
+
+  <section class="card download-card">
+    <input id="url" placeholder="Paste YouTube link…" />
+    <button onclick="download()">⬇ Download MP3</button>
+    <div class="progress"><div id="bar"></div></div>
+  </section>
+
+  <section class="card player-card">
+    <audio id="audio" controls></audio>
+  </section>
+
+  <section class="card song-list-card">
+    <ul id="songs"></ul>
+  </section>
+
+  <footer>
+    Made with ❤️ by Yash •  MusicApp
+  </footer>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

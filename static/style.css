@@ -1,0 +1,117 @@
+/* Sheriyans-inspired color palette */
+:root {
+  --bg: #f7f7fb;
+  --card-bg: #ffffff;
+  --text: #1c1c1c;
+  --subtext: #6e6e6e;
+  --accent: #f8f8f8;
+  --progress-bg: #e3e3f0;
+  --progress-fill: #6c63ff;
+}
+
+/* Reset */
+* { margin:0; padding:0; box-sizing:border-box; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+body { background: var(--bg); color: var(--text); }
+
+/* Container */
+.app-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+/* Header */
+header h1 {
+  font-size: 2.8rem;
+  text-align: center;
+  color: var(--text);
+  font-weight: 700;
+}
+
+header .tagline {
+  text-align: center;
+  color: var(--subtext);
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+/* Cards */
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  /* No shadow, no hover effect */
+}
+
+/* Download Card */
+.download-card input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.download-card button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #a1a1a1;
+  background: var(--accent);
+  color: var(--text);
+  font-weight: 600;
+  cursor: pointer;
+    transition: border 0.3s ease;
+  /* No hover effect */
+}
+.download-card button:hover{
+    border: 1px solid black;
+    transition: 0.3s ease;
+}
+
+/* Progress Bar */
+.progress {
+  width: 100%;
+  height: 6px;
+  background: var(--progress-bg);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+#bar {
+  height: 6px;
+  width: 0%;
+  background: var(--progress-fill);
+  transition: width 0.4s ease;
+}
+
+/* Player */
+.player-card audio {
+  width: 100%;
+  border-radius: 8px;
+  outline: none;
+  background: #fff;
+}
+
+/* Song List */
+.song-list-card ul {
+  list-style: none;
+}
+
+.song-list-card li {
+  padding: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  /* No hover effect */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: var(--subtext);
+}
